@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onclick = " table() ; return false " >
+        <label for=""> Enter a number for table : </label><br>
+        <input type="number" placeholder=" Enter a number for table " id="nFt" > <br> <br>
+        <label for=""> Enter number of Multiples : </label><br>
+        <input type="number" placeholder="Enter number of Multiples " id="nOm"> <br><br>
+        <button type="submit"> Calculate </button>
+    </form>
+
+    <h1 id="loop"></h1>
+
+
+
+    <script>
+
+        function table() {
+
+            let nFt = document.querySelector("#nFt").value ;
+            let nOm = document.querySelector("#nOm").value ; 
+
+
+            for (let i = 0 ;     i < nOm ;     i++) {
+                
+              console.log();
+                let loop = document.querySelector("#loop") ;
+                loop.innerHTML  +=  ` ${nFt} x ${i + 1} = ${nFt * ( i + 1 )} <br>  `  
+            }
+
+
+            
+        }
+
+      
+
+    </script>
+</body>
+</html>
