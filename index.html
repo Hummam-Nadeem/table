@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   <h1> <b> LOOP TABLE</h1> </b> 
+   
     <form action="" onclick = " table() ; return false " >
         <label for=""> Enter a number for table : </label><br>
         <input type="number" placeholder=" Enter a number for table " id="nFt" > <br> <br>
@@ -25,7 +28,7 @@
 
             let nFt = document.querySelector("#nFt").value ;
             let nOm = document.querySelector("#nOm").value ; 
-
+            loop.innerHTML=""
 
             for (let i = 0 ;     i < nOm ;     i++) {
                 
